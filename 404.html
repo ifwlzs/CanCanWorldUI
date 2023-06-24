@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CanCanWorld</title>
+    <title>404-CanCanWorld</title>
     <link rel="stylesheet" href="./css/vuetify.min.css">
     <link rel="stylesheet" href="./css/materialdesignicons.min.css">
     <link rel="stylesheet" href="./css/Material+Icons.css">
@@ -28,10 +28,7 @@
     {{ message }}
     <v-app id="inspire">
 
-        <v-app-bar class="bg-pink-lighten-3 "
-                   rounded
-                   scroll-behavior="collapse"
-                   scroll-threshold="119">
+        <v-app-bar class="bg-pink-lighten-3" rounded scroll-behavior="collapse" scroll-threshold="119">
             <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
             <v-toolbar-title>{{webName}}</v-toolbar-title>
@@ -39,7 +36,7 @@
                 <v-icon>mdi-magnify</v-icon>
             </v-btn>
             <v-btn icon>
-                <v-icon icon="mdi-brightness-4 "></v-icon>
+                <v-icon icon="mdi-brightness-4"></v-icon>
             </v-btn>
         </v-app-bar>
 
@@ -90,7 +87,7 @@
 
             <template v-slot:append>
                 <div class="pa-2 ">.
-                    <v-row  >
+                    <v-row>
                         <v-col>
                             <v-btn block
                                    class="bg-pink-lighten-3"
@@ -116,29 +113,17 @@
         </v-navigation-drawer>
 
         <v-main class="bg-pink-green">
-            <v-container>
-                <v-row>
-                    <template v-for="n in 5" :key="n">
-                        <v-col
-                                class="mt-2"
-                                cols="12"
-                        >
-                            <strong>Tag: {{ tagList[n-1] }}</strong>
-                        </v-col>
 
-                        <v-col
-                                v-for="j in 6"
-                                :key="`${n}${j}`"
-                                cols="6"
-                                md="2"
-                        >
-                            <v-sheet height="120px" :elevation="3" class="bg-grey-lighten-3 rounded-lg"></v-sheet>
-                        </v-col>
-                    </template>
-                </v-row>
-
-
-            </v-container>
+            <div
+                    class="ma-6 h-90  bg-white-50"
+            >
+                <h4 class="text-xl-h4 text-sm-h4 text-md-h4 text-lg-h4 text-h5 font-weight-bold pa-13 text-center text-red">
+                    404 Not Found
+                </h4>
+                <p class="text-center ">
+                    网页找不到咯
+                </p>
+            </div>
 
         </v-main>
 
@@ -200,7 +185,7 @@
                     'title': '首页',
                     'icon': 'mdi-home',
                     'submenu': [],
-                    'url': 'https://ccw.juhua.fun',
+                    'url': 'https://www.baidu.com',
                 },
                 {
                     'title': '网盘',
@@ -262,6 +247,7 @@
 
 </script>
 <style scoped>
+
 
 </style>
 

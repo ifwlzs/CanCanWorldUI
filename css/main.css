@@ -1,0 +1,45 @@
+:root {
+    --bg-pink-color: #ffc9ed;
+    --bg-green-color: #99ffd3;
+}
+
+.bg-pink-green {
+    background: -moz-linear-gradient(top, var(--bg-pink-color) 0%, var(--bg-green-color) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--bg-pink-color)), color-stop(100%));
+    background: -webkit-linear-gradient(top, var(--bg-pink-color) 0%, var(--bg-green-color) 100%);
+    background: -o-linear-gradient(top, var(--bg-pink-color) 0%, var(--bg-green-color) 100%);
+    background: -ms-linear-gradient(top, var(--bg-pink-color) 0%, var(--bg-green-color) 100%);
+    background: linear-gradient(to bottom, var(--bg-pink-color) 0%, var(--bg-green-color) 100%);
+}
+
+.v-list-group {
+    --prepend-width: 16px;
+}
+
+.v-list-item__prepend > .v-icon {
+    margin-inline-end: 16px;
+}
+
+.v-footer {
+    max-height: 40px;
+}
+
+.h-95 {
+    height: 95% !important
+}
+
+.h-90 {
+    height: 90% !important
+}
+
+.h-85 {
+    height: 85% !important
+}
+
+.h-80 {
+    height: 80% !important
+}
+
+.bg-white-50 {
+    background: rgba(255, 255, 255, 0.5);
+}
